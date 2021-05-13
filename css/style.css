@@ -1,0 +1,184 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dialog,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  font: 18px/18px Arial;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.modal-block {
+  margin: auto;
+  border: 0;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.modal-block-head {
+  position: relative;
+  padding: 20px 10px;
+  border-radius: 5px 5px 0 0;
+  background: #7ce7fa;
+}
+
+.modal-block-head-title {
+  font-size: 35px;
+  line-height: 35px;
+}
+
+.modal-block-head .close {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  outline: none;
+  background: #971717;
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.modal-block-head .close:hover {
+  color: #7ce7fa;
+  border-color: #7ce7fa;
+  background: #960808;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.modal-block-body {
+  padding: 20px 10px;
+  background: #fff;
+  border-radius: 0 0 5px 5px;
+}
+
+.modal-block-body-description {
+  text-align: justify;
+}
+
+.modal-block-save {
+  display: block;
+  padding: 10px 20px;
+  margin: 20px auto 0;
+  border: none;
+  outline: none;
+  background: #7ce7fa;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-block-save:hover {
+  background: #37a4b8;
+}
+
+.modal.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (min-width: 1251px) {
+  .modal-block {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1251px) {
+  .modal-block {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .modal-block {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .modal-block {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 576px) {
+  .modal-block {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .modal-block {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
